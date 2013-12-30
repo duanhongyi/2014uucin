@@ -42,7 +42,7 @@
 
       <article>
         <h1>
-          2014年技术发展规划
+          2013总结及2014发展规划
         </h1>
         <p>
           段洪义
@@ -97,35 +97,139 @@
             uuboard是我们第一个应用自动化构建的服务，也是我们第一个使用业务监控系统的服务。
         </p>
       </article>
-
       <article>
         <h3>
-          Simple slide with header and text
+            UU地图2.0上线
         </h3>
         <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
+          <img style='height: 400px' src='images/uumap.png'>
         </p>
+        <div class='source'>
+            虽然不完美，但是接口和结构是清晰的，我们仍有很多的期待。
+        </div>
+      </article>
+      <article>
+        <h3>
+            Superman项目
+        </h3>
         <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
+            这是一个系统使用自动化运维工具的项目，悠悠第一个使用python做大数据分析的项目。
+            大数据分析框架从开始预研那天起就是为python语言准备的，其具有如下特点:
+        </p>
+        <ul>
+            <li>站在devops角度开发系统，利于运维。</li>
+            <li>使用自动化测试方法有利于重构。</li>
+            <li>半个小时以内分析数十亿条数据进行空间分析。</li>
+            <li>10分钟内完成上千万条数据的插入工作。</li>
+        </ul>
+        <p>
+            一个迟来的数据分析项目。由于当时我们的人员能力并出成熟，所以我们使用了HIVE以及Java做数据分析。
         </p>
       </article>
 
       <article class='smaller'>
         <h3>
-          Simple slide with header and text (small font)
+            Stornado
         </h3>
         <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
+            2013年我们拥有了自己的机房；我们拥有了更多核心的CPU。
+            虽然基于协程的长连接在云虚拟主机上表现很完美，但是由于协程固有的一些特点使其并不能充分的利用多处理器以及多核心。
+            这样会导致系统资源的浪费。对此我们开发了长连接4，其对比长连接3的主要特点是：
         </p>
+        <ul>
+            <li>仿照nginx方式在多进程下复用端口，充分利用多核多CPU。</li>
+            <li>采用session复用机制，对同一个用户复用连接提高响应速度。</li>
+            <li>加入用户识别机制，可以在未来支持导航功能收费服务。</li>
+        </ul>
         <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
+           关于名称的来历也很简单，Super Tornado简称stornado 
         </p>
       </article>
-
+      <article class="smaller">
+        <h3>
+            UUsearch功能
+        </h3>
+        <p>
+            我们的搜索功能一直做的不好，其中有很多的原因，有数据原因，也有算法原因。uusearch项目是我们在搜索功能上的一些尝试：
+        </p>
+        <ul>
+            <li>搜索功能上加入了同义词识别功能。</li>
+            <li>在搜索功能上增加了全国分组功能。</li>
+            <li>在搜索功能上我们加入了简单的编辑距离来识别语义。</li>
+            <li>采用连接池以及部分代码C语言化，来支持千万数据毫秒级排序。</li>
+        </ul>
+        <p>很不幸的是，对搜索的理解，非搜索公司一般要比搜索公司差，这里面有基因的问题，搜索公司关注的是召回率与准确率，而非搜索公司关注的搜索式样与排序。这仅仅是一个开始，让我们期待一下uusearch2.0，它将会更加关注搜索本身。</p>
+      </article>
+      <article>
+        <h3>
+            虚拟化技术
+        </h3>
+        <p>
+            虚拟化技术有助于企业提高IT资源的利用率，降低IT运维成本，同时也能提升企业的安全性。
+            虚拟化技术是当前云计算的热门技术之一。
+            在内网我们大部分服务器均是虚拟化技术生成的虚拟主机，带来的好处显而易见：
+        </p>
+        <ul>
+            <li>提高资源的使用效率，削减开支节约能源。</li>
+            <li>简化测试、开发、部署流程。</li>
+            <li>通过拷贝虚拟机文件映像来改进灾难恢复工作。</li>
+        </ul>
+      </article>
+      <article>
+        <h3>
+            自动化运维
+        </h3>
+        <p>
+            运维团队需要面对来自外界的海量数据和大并发的挑战，中间还要面对互联互通的网络考验。
+            后端不得不面对随着公司业务发展日益增多的服务器管理，包括上层各种应用的统一部署和调度。
+        </p>
+        <ul>
+            <li>使用salt来管理日益增多的服务器，统一应用部署。</li>
+            <li>使用zabbix对服务器基础环境进行监控。</li>
+            <li>使用deb包管理机制进行半自动化上下线及版本回退。</li>
+        </ul>
+      </article>
+      <article>
+        <h3>
+            自动化构建系统
+        </h3>
+        <p>
+            随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量。
+            我们需要的不是CMMI，也不是复杂的流程，而是一些有责任的员工以及一个智能化的持续集成系统：
+        </p>
+        <ul>
+            <li>持续的软件版本发布，自动编译、分发、部署和测试项目。</li>
+            <li>一个基于git的的分布式代码管理环境。</li>
+            <li>一个无需太多的人工干预的自动化运维系统。</li>
+        </ul>
+      </article>
+      <article>
+        <h3>
+            2013年结语
+        </h3>
+        <p>
+          <img style='height: 500px' src='images/on_road.jpg'>
+        </p>
+        <div class="source">这些足够了吗？NO！刚刚在路上…… </div> 
+      </article>
+      <article>
+        <h3>
+            2014我们来了
+        </h3>
+        <p>
+          <img style='height: 500px' src='images/coming.jpg'>
+        </p>
+        <div class="source">移动互联网正在改变世界，未来充满机会……</div>
+      </article>
+      <article>
+        <h3>
+            研究必须是新的，而设计必须是好的。
+        </h3>
+        <p>
+          <img style='height: 500px' src='images/em.jpg'>
+        </p>
+        <div class="source">万物之始，大道至简，衍化至繁。好的设计是简单的设计。</div> 
+      </article>
       <article>
         <h3>
           Slide with bullet points and a longer title, just because we
