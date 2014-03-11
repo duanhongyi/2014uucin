@@ -214,6 +214,16 @@
         </p>
         <div class="source">移动互联网正在改变世界，未来充满机会……</div>
       </article>
+
+      <article>
+        <h3>
+            关于运维
+        </h3>
+        <p>
+          <img style='height: 500px' src='images/yunwei.jpg'>
+        </p>
+        <div class="source">运维人员就像是消防员……</div>
+      </article>
        <article>
         <h3>
             自动化运维系统
@@ -241,7 +251,24 @@
             <li>统一的日志收集与处理系统来管理服务器日志。</li>
             <li>故障定位系统来处理业务日志，为灰度发布做有力支撑。</li>
         </ul>
-      </article> 
+      </article>
+
+      <article>
+        <h3>
+            关于云
+        </h3>
+        <p>
+          <img style='height: 500px' src='images/cloud.jpg'>
+        </p>
+        <div class="source">基础架构全面向云服务方式演变...</div>
+      </article>
+      <article>
+        <h3>云是网络、互联网的一种比喻说法</h3>
+        <p>
+          <img style='width: 700px' src='images/service.jpg'>
+        </p>
+        <div class="source">万物互联是云计算的终极形式</div> 
+      </article>
       <article>
         <h3>
             基础服务
@@ -255,10 +282,53 @@
             <li>在运维硬件资源允许的条件下将虚拟化升级成iaas服务。</li>
             <li>整合swift以及iaas服务，统一鉴权接口，提供租户支持。</li>
         </ul>
+      </article>
+      <article class="smaller">
+        <h3>
+            位置搜索
+        </h3>
+        <p>
+            到目前为止，非搜索公司做搜索还没有成功的，这里面有基因的问题。
+            这里我们举一个最简单的例子：搜索公司关注的是召回率与准确率，而非搜索公司关注的搜索式样与排序。
+            uusearch本身并不算太成功，它仅仅是将一些诸如同义词、编辑距离等搜索的理念带到了数据库检索。
+            由于其本身过度关注排序而忽略了搜索准确率，导致其难以实现分布式，cloudsearch试图解决这个问题：
+        </p>
+        <ul>
+            <li>采用对POI名称进行一元分词，兼容数据库检索。</li>
+            <li>引入词位检索功能，来避免一元切割造成的召回率高而准确率低的情况。</li>
+            <li>采用分布式结构来解决一元切分后导致的系统变慢问题。</li>
+            <li>尝试整合联想搜索功能。</li>
+        </ul>
       </article> 
       <article>
         <h3>
-           大数据
+           悠悠云
+        </h3>
+        <p>
+            越来越多的企业开始内部IT资源的整合，2014年将会诞生了很多的内部私有云；
+            而价格便宜的公有云依然是中小企业的最佳选择。
+            针对悠悠团队，2014年的初级目标是在硬件资源允许的情况下拥有自己的IAAS云，并在不远的未来发展自己的PAAS云。
+        </p>
+        <ul>
+            <li>简化新项目启动。</li>
+            <li>每个app开箱即用，方便部署与监控。</li>
+            <li>利于系统的持续集成。</li>
+            <li>无需人工干预，去中心化。</li>
+        </ul>
+      </article> 
+
+      <article>
+        <h3>
+           关于大数据
+       </h3>
+        <p>
+          <img style='height: 500px' src='images/big_data.jpg'>
+        </p>
+        <div class="source">Volume（大量）、Velocity（高速）、Variety（多样）、Value（价值）</div> 
+      </article>
+      <article>
+        <h3>
+           悠悠大数据容量图
        </h3>
         <p>
           <img style='height: 500px' src='images/data.png'>
@@ -277,6 +347,31 @@
             <li>使用hadoop2.0的yarn协议开发实时调度系统。</li>
             <li>使用zookeeper来对内存处理数据进行实时容错。</li>
             <li>基于共享内存技术，降低内存使用率。</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+           关于WEB
+       </h3>
+        <p>
+          <img style='height: 500px' src='images/web.jpg'>
+        </p>
+        <div class="source">web本意是蜘蛛网和网的意思，在网页设计中我们称为网页的意思。</div> 
+      </article>
+      <article>
+        <h3>
+            HTML5
+        </h3>
+        <p>
+            从产品角度来看，前端朝着多终端的方向发展，需要综合考虑 PC、Pad、Phone、TV 等各种用户终端的交互实现。
+            未来的产品形态，需要高性能跨终端的面向消费者的应用，也需要传统PC端面向商户的富应用。
+            向左是移动化，向右是富应用化，这两个方向都非常重要，对前端的挑战则各有不同。
+        </p>
+        <ul>
+            <li>向左走我们需要响应式web设计能力。</li>
+            <li>向右走我们需要富应用设计能力。</li>
+            <li>两边都需要拥有全局的思维以及模块化设计的能力。</li>
         </ul>
       </article> 
       <article>
@@ -299,19 +394,43 @@
       </article>
       <article>
         <h3>
-            HTML5
+            Web自动化测试与持续集成
         </h3>
         <p>
-            从产品角度来看，前端朝着多终端的方向发展，需要综合考虑 PC、Pad、Phone、TV 等各种用户终端的交互实现。
-            未来的产品形态，需要高性能跨终端的面向消费者的应用，也需要传统PC端面向商户的富应用。
-            向左是移动化，向右是富应用化，这两个方向都非常重要，对前端的挑战则各有不同。
+          Web应用因为其迭代周期短，需求变化快特殊性质，越来越多的Web开发团队在拥抱敏捷。同时随着前端技术tHtml5、Javascrip，等不断被推出和完善，Web应用也变得越来越复杂很绚丽。这都给我们的测试带来了挑战。
         </p>
         <ul>
-            <li>向左走我们需要响应式web设计能力。</li>
-            <li>向右走我们需要富应用设计能力。</li>
-            <li>两边都需要拥有全局的思维以及模块化设计的能力。</li>
+            <li>支持数据驱动。</li>
+            <li>对象库的分离和管理。</li>
+            <li>自动化测试脚本的组织和管理。</li>
+	    <li>脚本的可重用和可配置。</li>
+            <li>支持同Jenkins的持续集成。</li>
         </ul>
-      </article> 
+      </article>
+      <article>
+        <h3>
+            响应式设计
+        </h3>
+        <p>
+		响应式Web设计(Responsive Web design)的理念是：页面的设计与开发应当根据用户行为以及设备环境(系统平台、屏幕尺寸、屏幕定向等)进行相应的响应和调整。
+        </p>
+        <ul>
+            <li>将一切弹性化。</li>
+            <li>熟练掌握div布局精髓。</li>
+            <li>bootstrap、purecss、Topcoat、Markup...</li>
+        </ul>
+      </article>
+
+
+      <article>
+        <h3>
+            关于团队
+        </h3>
+        <p>
+          <img style='height: 410px' src='images/team.jpg'>
+        </p>
+        <div class="source">没有完美的个人，只有完美的团队...</div> 
+      </article>
       <article>
         <h3>
             应用出现问题，是这样？
@@ -330,7 +449,7 @@
       </article> 
       <article>
         <h3>
-            Devops
+            以Devops促进团队的相互融合
         </h3>
         <p>
             DevOps是一组过程、方法与系统的统称，用于促进开发、技术运营和质量保障部门之间的沟通、协作与整合。
@@ -341,44 +460,26 @@
             <li>站在开发角度去运维，为开发提供好用的故障跟踪系统。</li>
             <li>站在运维的角度去开发，让运维知道系统在干什么。</li>
         </ul>
-      </article> 
-      <article class="smaller">
+      </article>
+      <article>
         <h3>
-            位置搜索
+           建立学习型团队
         </h3>
         <p>
-            到目前为止，非搜索公司做搜索还没有成功的，这里面有基因的问题。
-            这里我们举一个最简单的例子：搜索公司关注的是召回率与准确率，而非搜索公司关注的搜索式样与排序。
-            uusearch本身并不算太成功，它仅仅是将一些诸如同义词、编辑距离等搜索的理念带到了数据库检索。
-            由于其本身过度关注排序而忽略了搜索准确率，导致其难以实现分布式，cloudsearch试图解决这个问题：
+          <img style='height: 410px' src='images/learning.jpg'>
         </p>
-        <ul>
-            <li>采用对POI名称进行一元分词，兼容数据库检索。</li>
-            <li>引入词位检索功能，来避免一元切割造成的召回率高而准确率低的情况。</li>
-            <li>采用分布式结构来解决一元切分后导致的系统变慢问题。</li>
-            <li>尝试整合联想搜索功能。</li>
-        </ul>
-      </article> 
-      <article class="smaller">
+        <div class="source">建立一种无障碍的钻研、学习和交流的文化。</div> 
+      </article>
+      <article>
         <h3>
-            系统模块化
+           团队技术栈
         </h3>
-        <p>
-            模块化是个一般概念，这一概念也适用于软件开发，可以让软件按模块单独开发，各模块通常都用一个标准化的接口来进行通信。
-            实际上，除了规模大小有区别外，面向对象语言中对象之间的关注点分离与模块化的概念基本一致。
-            通常，把系统划分为多个模块有助于将耦合减至最低，让代码维护更加简单。
-            多屏互动是未来APP所要具备的基本能力，功能合理拆分任意组合是完成多屏互动的必要技术，对此我们需要在技术上做好准备。
-        </p>
-        <ul>
-            <li>依赖最小化，避免交叉调用、各层次之间调用尽量使用接口。</li>
-            <li>可以使用Library方式将共用组件进行拆分。</li>
-            <li>可以使用诸如maven之类的工具对app library进行依赖管理。</li>
-            <li>可以考虑使用一些模块化的框架将应用插件化。</li>
-        </ul>
-        <p>eclipse osgi、android-application-plug-ins-frame-work都是可以研究的对象</p>
-      </article> 
+	<iframe style='height: 510px' src="sigma.js/examples/test.html"></iframe>
+        <div class="source">现代项目的开发，需要掌握多种技术。</div> 
+      </article>
+
      <article>
-        <h3>信息安全</h3>
+        <h3>关于信息安全</h3>
         <p>
           <img style='height: 400px' src='images/safe.jpg'>
         </p>
@@ -400,29 +501,7 @@
             <li>培养开发与运维人员信息安全意识，明确敏感数据范围。</li>
         </ul>
       </article> 
-      <article>
-        <h3>云是网络、互联网的一种比喻说法</h3>
-        <p>
-          <img style='height: 500px' src='images/cloud.jpg'>
-        </p>
-        <div class="source">万物互联是云计算的终极形式</div> 
-      </article>
-      <article>
-        <h3>
-           悠悠云
-        </h3>
-        <p>
-            越来越多的企业开始内部IT资源的整合，2014年将会诞生了很多的内部私有云；
-            而价格便宜的公有云依然是中小企业的最佳选择。
-            针对悠悠团队，2014年的初级目标是在硬件资源允许的情况下拥有自己的IAAS云，并在不远的未来发展自己的PAAS云。
-        </p>
-        <ul>
-            <li>简化新项目启动。</li>
-            <li>每个app开箱即用，方便部署与监控。</li>
-            <li>利于系统的持续集成。</li>
-            <li>无需人工干预，去中心化。</li>
-        </ul>
-      </article> 
+
       <article>
         <h3>
             关于设计
@@ -431,6 +510,42 @@
           <img style='height: 500px' src='images/em.jpg'>
         </p>
         <div class="source">研究必须是新的，而设计必须是好的。万物之始，大道至简，衍化至繁。好的设计是简单的设计。</div> 
+      </article>
+      <article class="smaller">
+        <h3>
+            系统模块化
+        </h3>
+        <p>
+            模块化是个一般概念，这一概念也适用于软件开发，可以让软件按模块单独开发，各模块通常都用一个标准化的接口来进行通信。
+            实际上，除了规模大小有区别外，面向对象语言中对象之间的关注点分离与模块化的概念基本一致。
+            通常，把系统划分为多个模块有助于将耦合减至最低，让代码维护更加简单。
+            多屏互动是未来APP所要具备的基本能力，功能合理拆分任意组合是完成多屏互动的必要技术，对此我们需要在技术上做好准备。
+        </p>
+        <ul>
+            <li>依赖最小化，避免交叉调用、各层次之间调用尽量使用接口。</li>
+            <li>可以使用Library方式将共用组件进行拆分。</li>
+            <li>可以使用诸如maven之类的工具对app library进行依赖管理。</li>
+            <li>可以考虑使用一些模块化的框架将应用插件化。</li>
+        </ul>
+        <p>eclipse osgi、android-application-plug-ins-frame-work都是可以研究的对象</p>
+      </article>
+      <article class="smaller">
+        <h3>
+            系统模块化
+        </h3>
+        <p>
+            模块化是个一般概念，这一概念也适用于软件开发，可以让软件按模块单独开发，各模块通常都用一个标准化的接口来进行通信。
+            实际上，除了规模大小有区别外，面向对象语言中对象之间的关注点分离与模块化的概念基本一致。
+            通常，把系统划分为多个模块有助于将耦合减至最低，让代码维护更加简单。
+            多屏互动是未来APP所要具备的基本能力，功能合理拆分任意组合是完成多屏互动的必要技术，对此我们需要在技术上做好准备。
+        </p>
+        <ul>
+            <li>依赖最小化，避免交叉调用、各层次之间调用尽量使用接口。</li>
+            <li>可以使用Library方式将共用组件进行拆分。</li>
+            <li>可以使用诸如maven之类的工具对app library进行依赖管理。</li>
+            <li>可以考虑使用一些模块化的框架将应用插件化。</li>
+        </ul>
+        <p>eclipse osgi、android-application-plug-ins-frame-work都是可以研究的对象</p>
       </article>
       
       <article>
